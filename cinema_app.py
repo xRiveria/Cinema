@@ -353,6 +353,153 @@ def get_filmhouse_movies(scraper):
 
 
 # ==========================================
+# PHASE 3: FETCH UPCOMING / COMING SOON
+# ==========================================
+#
+# Each fetcher returns a list of raw chain entries. Mobile normalize.ts
+# unifies them via the existing fuzz-merge so different chains' titles for
+# the same film collapse into one upcoming card.
+
+def _parse_release_date(raw):
+    """Best-effort ISO YYYY-MM-DD. Accepts ISO, 'June 04, 2026', or epoch ms."""
+    if not raw:
+        return ""
+    if isinstance(raw, (int, float)):
+        try:
+            return datetime.fromtimestamp(raw / 1000 if raw > 1e11 else raw).strftime('%Y-%m-%d')
+        except Exception:
+            return ""
+    s = str(raw).strip()
+    if not s:
+        return ""
+    m = re.match(r'^(\d{4})-(\d{2})-(\d{2})', s)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+    for fmt in ('%B %d, %Y', '%d %B %Y', '%d/%m/%Y', '%Y/%m/%d'):
+        try:
+            return datetime.strptime(s, fmt).strftime('%Y-%m-%d')
+        except ValueError:
+            continue
+    return s
+
+
+def get_gv_upcoming(scraper):
+    print("Fetching Golden Village Coming Soon...")
+    timestamp = int(time.time() * 1000)
+    url = f"https://www.gv.com.sg/.gv-api/comingsoon?t=451_{timestamp}"
+    headers = {
+        "x_developer": "ENOVAX",
+        "origin": "https://www.gv.com.sg",
+        "referer": "https://www.gv.com.sg/GVMovies",
+    }
+    try:
+        res = scraper.post(url, headers=headers)
+        if res.status_code != 200:
+            print(f"  -> GV upcoming failed: {res.status_code}")
+            return []
+        payload = res.json()
+        data = payload.get('data', payload) if isinstance(payload, dict) else payload
+        if not isinstance(data, list):
+            print("  -> GV upcoming: unexpected shape")
+            return []
+        out = []
+        for m in data:
+            out.append({
+                "chain": "GV",
+                "title": m.get("filmTitle") or m.get("title") or "",
+                "image": m.get("imageLink") or m.get("posterUrl") or "",
+                "rating": m.get("rating") or "TBA",
+                "duration": str(m.get("duration") or ""),
+                "description": (m.get("synopsis") or m.get("consumerAdvise") or "").strip(),
+                "releaseDate": _parse_release_date(m.get("openingDate") or m.get("releaseDate")),
+                "link": m.get("link") or "",
+            })
+        print(f"  -> Found {len(out)} upcoming GV films.")
+        return out
+    except Exception as e:
+        print(f"  -> GV upcoming error: {e}")
+        return []
+
+
+def get_shaw_upcoming(scraper):
+    print("Fetching Shaw Coming Soon...")
+    url = "https://shaw.sg/internal/get_coming_soon_movies"
+    headers = {
+        "x-app": "PWSM",
+        "x-api-forward-to": "internal",
+        "referer": "https://shaw.sg/coming-soon",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    }
+    try:
+        res = scraper.get(url, headers=headers)
+        if res.status_code != 200:
+            print(f"  -> Shaw upcoming failed: {res.status_code}")
+            return []
+        data = res.json()
+        if not isinstance(data, list):
+            print("  -> Shaw upcoming: unexpected shape")
+            return []
+        out = []
+        for m in data:
+            out.append({
+                "chain": "Shaw",
+                "title": m.get("primaryTitle") or "",
+                "image": m.get("posterUrl") or "",
+                "rating": m.get("classifyCode") or "TBA",
+                "duration": str(m.get("duration") or ""),
+                "description": (m.get("synopsisShort") or "").strip(),
+                "releaseDate": _parse_release_date(m.get("releaseDate")),
+                "link": "",
+            })
+        print(f"  -> Found {len(out)} upcoming Shaw films.")
+        return out
+    except Exception as e:
+        print(f"  -> Shaw upcoming error: {e}")
+        return []
+
+
+def get_eaglewings_upcoming(scraper):
+    print("Fetching EagleWings Coming Soon...")
+    try:
+        home_url = "https://www.eaglewingscinematics.com.sg/"
+        scraper.get(home_url)
+        xsrf_cookie = scraper.cookies.get('XSRF-TOKEN')
+        api_url = "https://www.eaglewingscinematics.com.sg/api/v1/film/comingsoons"
+        headers = {
+            "accept": "application/json",
+            "x-requested-with": "XMLHttpRequest",
+            "referer": home_url,
+        }
+        if xsrf_cookie:
+            headers["x-xsrf-token"] = urllib.parse.unquote(xsrf_cookie)
+        res = scraper.get(api_url, headers=headers)
+        if res.status_code != 200:
+            print(f"  -> EW upcoming failed: {res.status_code}")
+            return []
+        data = res.json()
+        if not isinstance(data, list):
+            print("  -> EW upcoming: unexpected shape")
+            return []
+        out = []
+        for m in data:
+            out.append({
+                "chain": "EagleWings",
+                "title": m.get("title") or "",
+                "image": m.get("image") or "",
+                "rating": m.get("rating") or "TBA",
+                "duration": "",
+                "description": (m.get("description") or "").strip(),
+                "releaseDate": _parse_release_date(m.get("openingdate")),
+                "link": m.get("link") or "",
+            })
+        print(f"  -> Found {len(out)} upcoming EagleWings films.")
+        return out
+    except Exception as e:
+        print(f"  -> EW upcoming error: {e}")
+        return []
+
+
+# ==========================================
 # MAIN EXECUTION
 # ==========================================
 
@@ -376,17 +523,25 @@ def main():
         eagle_detailed = get_eaglewings_showtimes(scraper, eagle_master)
     else:
         eagle_detailed = []
-    
-    # 3. Consolidate into the Final Dashboard Object
+
+    # 3. Upcoming / Coming Soon (Filmhouse already inlines future-dated shows
+    #    into now_showing, so no separate fetch for them.)
+    upcoming = []
+    upcoming.extend(get_gv_upcoming(scraper))
+    upcoming.extend(get_shaw_upcoming(scraper))
+    upcoming.extend(get_eaglewings_upcoming(scraper))
+
+    # 4. Consolidate into the Final Dashboard Object
     dashboard_data = {
         "last_updated": datetime.now().isoformat(),
         "golden_village": gv_detailed,
         "shaw_theatres": shaw_data,
         "eagle_wings": eagle_detailed,
-        "filmhouse": filmhouse_data
+        "filmhouse": filmhouse_data,
+        "upcoming": upcoming,
     }
-    
-    # 4. Save the file
+
+    # 5. Save the file
     filename = 'cinema_dashboard_FULL.json'
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(dashboard_data, f, indent=4)
