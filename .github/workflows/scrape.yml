@@ -51,15 +51,51 @@ jobs:
           python cinema_app.py
           ls -lh cinema_dashboard_FULL.json
 
-      - name: Commit updated JSON
+      # Pushes ONLY the JSON to a separate public repo so the code repo
+      # can stay private. Configure these once:
+      #   • Create a public repo (e.g. xRiveria/cinema-data)
+      #   • Settings → Secrets → Actions → New repository secret:
+      #       DATA_REPO_TOKEN  = fine-grained PAT with Contents: read/write on cinema-data
+      #       DATA_REPO        = "xRiveria/cinema-data"
+      #       DATA_REPO_BRANCH = "main"   (or whatever the default branch is)
+      - name: Publish JSON to public data repo
+        env:
+          DATA_REPO: ${{ vars.DATA_REPO || secrets.DATA_REPO }}
+          DATA_REPO_BRANCH: ${{ vars.DATA_REPO_BRANCH || 'main' }}
+          DATA_REPO_TOKEN: ${{ secrets.DATA_REPO_TOKEN }}
         run: |
+          if [ -z "$DATA_REPO" ] || [ -z "$DATA_REPO_TOKEN" ]; then
+            echo "DATA_REPO / DATA_REPO_TOKEN not set — falling back to in-repo commit."
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add cinema_dashboard_FULL.json
+            if git diff --staged --quiet; then
+              echo "No changes — skipping commit."
+            else
+              STAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+              git commit -m "chore(data): daily scrape ${STAMP}"
+              git push
+            fi
+            exit 0
+          fi
+
+          STAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+          TMP=$(mktemp -d)
+          git clone --depth=1 \
+            "https://x-access-token:${DATA_REPO_TOKEN}@github.com/${DATA_REPO}.git" \
+            --branch "${DATA_REPO_BRANCH}" \
+            "${TMP}" 2>/dev/null || git clone --depth=1 \
+            "https://x-access-token:${DATA_REPO_TOKEN}@github.com/${DATA_REPO}.git" "${TMP}"
+
+          cp cinema_dashboard_FULL.json "${TMP}/cinema_dashboard_FULL.json"
+          cd "${TMP}"
+          git checkout -B "${DATA_REPO_BRANCH}"
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add cinema_dashboard_FULL.json
           if git diff --staged --quiet; then
             echo "No changes — skipping commit."
           else
-            STAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            git commit -m "chore(data): daily scrape ${STAMP}"
-            git push
+            git commit -m "data: daily scrape ${STAMP}"
+            git push origin "${DATA_REPO_BRANCH}"
           fi
