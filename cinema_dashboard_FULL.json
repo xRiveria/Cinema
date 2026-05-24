@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-24T18:05:10.727899",
+    "last_updated": "2026-05-24T18:09:00.543017",
     "golden_village": [
         {
             "filmCd": "1378",
@@ -65850,7 +65850,7 @@
                                 },
                                 {
                                     "link": "https://www.eaglewingscinematics.com.sg/ticket/star-wars-the-mandalorian-and-grogu/film/1000000656/cinema/0000000001/time/107777/gold-hall-1",
-                                    "available": 7,
+                                    "available": 6,
                                     "time": "16:35",
                                     "screen": {
                                         "daynum": "3",
@@ -67307,6 +67307,638 @@
                     ]
                 }
             ]
+        }
+    ],
+    "upcoming": [
+        {
+            "chain": "GV",
+            "title": "Passenger *",
+            "image": "https://media.gv.com.sg/imagesresize/img1416.jpg",
+            "rating": "NC16",
+            "duration": "94",
+            "description": "Violence & Horror",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Masters Of The Universe *",
+            "image": "https://media.gv.com.sg/imagesresize/img1403.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "The Furious *",
+            "image": "http://media.gv.com.sg/imagesresize/img4469.jpg",
+            "rating": "PG13",
+            "duration": "106",
+            "description": "Some Violence",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Scary Movie *",
+            "image": "https://media.gv.com.sg/imagesresize/img1417.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "The Amazing Digital Circus: The Last Act *",
+            "image": "http://media.gv.com.sg/imagesresize/img1432.jpg",
+            "rating": "PG13",
+            "duration": "95",
+            "description": "Some Violence",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Disclosure Day *",
+            "image": "https://media.gv.com.sg/imagesresize/img1389.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Disney And Pixar\u2019s Toy Story 5 *",
+            "image": "https://media.gv.com.sg/imagesresize/img1406.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "BTS WORLD TOUR \u2018ARIRANG\u2019 IN BUSAN: LIVE VIEWING",
+            "image": "https://media.gv.com.sg/imagesresize/img7468.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "195",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "(ENCORE) BTS WORLD TOUR \u2018ARIRANG\u2019 IN BUSAN: LIVE VIEWING ",
+            "image": "https://media.gv.com.sg/imagesresize/img7469.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "195",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Supergirl *",
+            "image": "https://media.gv.com.sg/imagesresize/img1339.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Minions & Monsters *",
+            "image": "https://media.gv.com.sg/imagesresize/img1398.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Disney\u2019s Moana *",
+            "image": "https://media.gv.com.sg/imagesresize/img1407.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "The Odyssey *",
+            "image": "https://media.gv.com.sg/imagesresize/img1422.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Spider-Man: Brand New Day *",
+            "image": "https://media.gv.com.sg/imagesresize/img1424.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Paw Patrol: The Dino Movie *",
+            "image": "https://media.gv.com.sg/imagesresize/img1418.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "The End Of Oak Street *",
+            "image": "https://media.gv.com.sg/imagesresize/img1411.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Insidious: Out Of The Further *",
+            "image": "https://media.gv.com.sg/imagesresize/img1423.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Forgotten Island *",
+            "image": "https://media.gv.com.sg/imagesresize/img1410.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Digger *",
+            "image": "https://media.gv.com.sg/imagesresize/img1392.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Clayface *",
+            "image": "https://media.gv.com.sg/imagesresize/img1425.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "The Cat In The Hat",
+            "image": "https://media.gv.com.sg/imagesresize/img1332.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "120",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Focker In-Law *",
+            "image": "https://media.gv.com.sg/imagesresize/img1415.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Dune: Part Three *",
+            "image": "https://media.gv.com.sg/imagesresize/img1408.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "GV",
+            "title": "Marvel Studios\u2019 Avengers: Doomsday *",
+            "image": "https://media.gv.com.sg/imagesresize/img1395.jpg",
+            "rating": "Rating to be Advised",
+            "duration": "",
+            "description": "",
+            "releaseDate": "",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Passenger",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1657-Poster-1776741234284",
+            "rating": "NC16",
+            "duration": "94",
+            "description": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
+            "releaseDate": "2026-05-28",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Masters of the Universe",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1750-Poster-1778050059609",
+            "rating": "TBA",
+            "duration": "141",
+            "description": "A young man on Earth discovers a fabulous secret legacy as the prince of an alien planet, and must recover a magic sword and return home to protect his kingdom.",
+            "releaseDate": "2026-06-04",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Scary Movie",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1736-Poster-1778555427577",
+            "rating": "TBA",
+            "duration": "96",
+            "description": "Twenty-six years after outrunning a suspiciously familiar masked killer (\u201cGhostface\u201d), the Core Four are back in the killer\u2019s crosshairs and no horror movie IP is safe. Marlon Wayans (\u201cShorty\u201d), Shawn Wayans (\u201cRay\u201d), Anna Faris (\u201cCindy\u201d), and Regina Hall (\u201cBrenda\u201d) reunite in Scary Movie alongside returning favorites and fresh faces to slash through reboots, remakes, requels, prequels, sequels, spin-offs, elevated horror, origin stories, anything with the word legacy in it, and every \u201cfinal chapter\u201d that absolutely isn\u2019t final. Nothing is sacred. No trope survives. Every line gets crossed. The Wayans are back to cancel the Cancel Culture.",
+            "releaseDate": "2026-06-04",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "The Furious (MLY)",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1753-Poster-1778211681267",
+            "rating": "TBA",
+            "duration": "106",
+            "description": "A working-class father teams up with a troubled journalist to navigate a dangerous criminal underworld after his daughter vanishes, racing against time to rescue her while exposing a web of corruption.",
+            "releaseDate": "2026-06-04",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "The Yeti",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1714-Poster-1776156391594",
+            "rating": "M18",
+            "duration": "94",
+            "description": "Merriell Sunday Sr. and Hollis Bannister vanished in Alaska. Ellie and Merriell Jr. mount a search, but an ancient threat stalks their expedition into the wilderness, hunting them as they seek the truth behind the disappearances.",
+            "releaseDate": "2026-06-04",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Animal Farm",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1724-Poster-1776155227774",
+            "rating": "PG",
+            "duration": "95",
+            "description": "A satirical fable following an animal revolution as pigs seize power and the farm descends into a ruthless dictatorship--fulfilling Orwell's warning about the dangers of communism.",
+            "releaseDate": "2026-06-11",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Disclosure Day",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1752-Poster-1779259864892",
+            "rating": "TBA",
+            "duration": "145",
+            "description": "If you found out we weren\u2019t alone, if someone showed you, proved it to you, would that frighten you? This summer, the truth belongs to seven billion people. We are coming close to \u2026 Disclosure Day.",
+            "releaseDate": "2026-06-11",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "The Furious",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1739-Poster-1779338362315",
+            "rating": "M18",
+            "duration": "114",
+            "description": "After the daughter of Wang Wei (Xie Miao) is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out on a rampage to find her himself.",
+            "releaseDate": "2026-06-11",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "BTS WORLD TOUR 'ARIRANG' IN BUSAN: LIVE VIEWING (K)",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1768-Poster-1779334610346",
+            "rating": "G",
+            "duration": "195",
+            "description": "The historic journey continues. Following the record-breaking opening of the \u2018ARIRANG\u2019 world tour, pop royalty BTS returns to the iconic Busan Asiad Main Stadium for a monumental homecoming, broadcast live to cinemas around the world. This marks their poignant return to the very venue where they shared their final full-group performance before enlistment in 3 years and 8 months.",
+            "releaseDate": "2026-06-13",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "BTS WORLD TOUR 'ARIRANG' IN BUSAN: LIVE VIEWING (ENCORE)",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1769-Poster-1779338747748",
+            "rating": "G",
+            "duration": "195",
+            "description": "This is an encore presentation of BTS WORLD TOUR 'ARIRANG' IN BUSAN: LIVE VIEWING (ENCORE). The historic journey continues. Following the record-breaking opening of the \u2018ARIRANG\u2019 world tour, pop royalty BTS returns to the iconic Busan Asiad Main Stadium for a monumental homecoming, broadcast live to cinemas around the world. This marks their poignant return to the very venue where they shared their final full-group performance before enlistment in 3 years and 8 months.",
+            "releaseDate": "2026-06-14",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Backrooms",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1677-Poster-1775635696708",
+            "rating": "TBA",
+            "duration": "111",
+            "description": "A strange doorway appears in the basement of a furniture showroom.",
+            "releaseDate": "2026-06-18",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Disney and Pixar's Toy Story 5",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1766-Poster-1779266229189",
+            "rating": "TBA",
+            "duration": "102",
+            "description": "Woody, Buzz, Jessie and the rest of the gang's jobs are challenged when they're introduced to electronics, a new threat to playtime.",
+            "releaseDate": "2026-06-18",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "DISNEY\u2019S MOANA",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1760-Poster-1778555963567",
+            "rating": "TBA",
+            "duration": "90",
+            "description": "In \u201cMoana,\u201d Disney\u2019s live action reimagining of the beloved Oscar\u00ae-nominated animated adventure, Moana answers the Ocean\u2019s call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+            "releaseDate": "2026-07-09",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "The Death of Robin Hood",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1699-Poster-1779265827838",
+            "rating": "NC16",
+            "duration": "122",
+            "description": "Grappling with his past after a life of crime and murder, Robin Hood finds himself gravely injured after a battle he thought would be his last. In the hands of a mysterious woman, he is offered a chance at salvation.",
+            "releaseDate": "2026-07-09",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "The Odyssey",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1638-Poster-1778215780157",
+            "rating": "TBA",
+            "duration": "90",
+            "description": "Christopher Nolan\u2019s next film, The Odyssey, is a mythic action epic shot across the world using brand new IMAX \u00ae film technology. After the Trojan War, Odysseus faces a dangerous voyage back to Ithaca, meeting creatures like the Cyclops Polyphemus, Sirens, and Circe along the way.",
+            "releaseDate": "2026-07-16",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "You Only Live Twice (1967) (4K)",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1693-Poster-1777451933113",
+            "rating": "PG13",
+            "duration": "117",
+            "description": "James Bond and the Japanese Secret Service must find and stop the true culprit of a series of space hijackings, before war is provoked between Russia and the United States.",
+            "releaseDate": "2026-07-24",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Spider-Man: Brand New Day",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1639-Poster-1776741701235",
+            "rating": "TBA",
+            "duration": "90",
+            "description": "Peter Parker tries to focus on college and leave Spider-Man behind. But when a new threat endangers his friends, he must break his promise and suit up again, teaming with an unexpected ally to protect those he loves.",
+            "releaseDate": "2026-07-30",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Digger",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1640-Poster-1768375951593",
+            "rating": "TBA",
+            "duration": "90",
+            "description": "The most powerful man in the world embarks on a frantic mission to prove he is humanity\u2019s savior before the disaster he\u2019s unleashed destroys everything.",
+            "releaseDate": "2026-10-01",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1377-Poster-1775529130486",
+            "rating": "TBA",
+            "duration": "90",
+            "description": "On Halloween Eve at Mossy Bottom Farm, excitement turns to dismay when the clumsy Farmer ruins the pumpkin patch. Shaun tries fixing it with science experiments, but things go wrong when a wild beast appears in the woods.",
+            "releaseDate": "2026-10-01",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Street Fighter",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1641-Poster-1768366553272",
+            "rating": "TBA",
+            "duration": "90",
+            "description": "Street Fighters Ryu and Ken reunite when Chun-Li recruits them for the World Warrior Tournament. As they face a hidden conspiracy, they must confront each other and their past-or face destruction.",
+            "releaseDate": "2026-10-15",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "The Cat in the Hat",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1363-Poster-1768376418345",
+            "rating": "TBA",
+            "duration": "90",
+            "description": "In the wonderfully whimsical tradition of Dr. Seuss, The Cat in the Hat comes to the big screen in his animated theatrical feature film debut, doing what he does best\u2014 spreading joy to \u201chappyless\u201d kids. In the film, The Cat takes on his toughest assignment yet\u2026 to cheer a pair of siblings struggling with their move to a new town.",
+            "releaseDate": "2026-11-05",
+            "link": ""
+        },
+        {
+            "chain": "Shaw",
+            "title": "Marvel Studios' Avengers: Doomsday",
+            "image": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1633-Poster-1768206835987",
+            "rating": "TBA",
+            "duration": "90",
+            "description": "Plot under wraps.",
+            "releaseDate": "2026-12-17",
+            "link": ""
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Masters Of The Universe",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000693.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "In MASTERS OF THE UNIVERSE, Director Travis Knight brings the\r\nlegendary franchise back to the big screen in this epic live-action\r\nadventure.After being separated for 15 years,the Sword of Power leads Prince Adam (Nicholas Galitzine) back to Eternia where he discovers his home s...",
+            "releaseDate": "2026-06-04",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/masters-of-the-universe/A000000693"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Animal Farm",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-22-280-A000000711.jpg",
+            "rating": "PG",
+            "duration": "",
+            "description": "A satirical fable following an animal revolution as pigs seize power and the farm descends into a ruthless dictatorship-fulfilling Orwell's warning about the dangers of communism",
+            "releaseDate": "2026-06-11",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/animal-farm/A000000711"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Disclosure Day",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000674.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "If you found out we weren't alone, if someone showed you, proved it to you, would that frighten you?",
+            "releaseDate": "2026-06-11",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/disclosure-day/A000000674"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "The Furious",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-22-280-A000000710.jpg",
+            "rating": "M18",
+            "duration": "",
+            "description": "After the daughter of Wang Wei (Xie Miao) is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out on a rampage to find her himself. His only ally is Navin (Joe Taslim) \u2013 a relentless journalist whose wife has mysteriously disappeared. Fuel...",
+            "releaseDate": "2026-06-11",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/the-furious/A000000710"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Disney And Pixar's Toy Story 5",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000669.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "Buzz, Woody, Jessie are challenged after being introduced to what kids are obsessed with today: electronics",
+            "releaseDate": "2026-06-18",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/disney-and-pixars-toy-story-5/A000000669"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Supergirl",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000673.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "It follows Kara Zor-El's story and her darker origin before she finally made her way to Earth",
+            "releaseDate": "2026-06-25",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/supergirl/A000000673"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Minions & Monsters",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000690.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "In the 1920s, three minions go to Hollywood to pursue their dreams of becoming filmmakers, but they discover a spellbook, and accidentally summon a monster",
+            "releaseDate": "2026-07-01",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/minions-monsters/A000000690"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Disney's Moana",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000697.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "Live-action adaptation of the 2016 Disney animated film 'Moana'\r\nLeaving her island for the first time, young Moana embarks on an epic seafaring adventure to restore prosperity to her people.",
+            "releaseDate": "2026-07-09",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/disneys-moana/A000000697"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "The Odyssey",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000675.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "After the Trojan War, Odysseus faces a dangerous voyage back to Ithaca, meeting creatures like the Cyclops Polyphemus, Sirens, and Circe along the way",
+            "releaseDate": "2026-07-16",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/the-odyssey/A000000675"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Spider-Man: Brand New Day",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000706.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "After the record-breaking global success of Spider-Man: No Way\r\nHome, Spider-Man: Brand New Daymarks an entirely new chapter for\r\nPeter Parker and Spider-Man. Four years have passed since the events of No Way Home, and Peter is now an adult living entirely alone, having voluntari...",
+            "releaseDate": "2026-07-30",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/spider-man-brand-new-day/A000000706"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "PAW Patrol: The Dino Movie",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000702.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island",
+            "releaseDate": "2026-08-06",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/paw-patrol-the-dino-movie/A000000702"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "The End Of Oak Street",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000703.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "The Platt family bands together to navigate their new surroundings after a cosmic event transports their suburban neighborhood to someplace unknown",
+            "releaseDate": "2026-08-13",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/the-end-of-oak-street/A000000703"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Forgotten Island",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000704.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "Follows two best friends who become stranded on the mystical world of Nakali, where their only escape might cost them their shared lifetime of memories",
+            "releaseDate": "2026-09-24",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/forgotten-island/A000000704"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Clayface",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-13-280-A000000708.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "Rising Hollywood star Matt Hagen descends into a horrifying revenge-filled monster when scientific ambition strips him of his identity and humanity",
+            "releaseDate": "2026-10-22",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/clayface/A000000708"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "The Cat In The Hat",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000631.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "Meet the Cat in the Hat you don't know in an all-new, epic adventure where mischief, magic and mayhem reign supreme",
+            "releaseDate": "2026-11-05",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/the-cat-in-the-hat/A000000631"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Focker-in-Law",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-13-280-A000000709.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "A young man named Henry, son of Greg and Pam Focker, faces family chaos when he decides to marry a strong-willed woman who appears to be his complete mismatch",
+            "releaseDate": "2026-11-26",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/focker-in-law/A000000709"
+        },
+        {
+            "chain": "EagleWings",
+            "title": "Dune: Part Three",
+            "image": "https://www.eaglewingscinematics.com.sg/storage/film_images/2026-05-04-280-A000000699.jpg",
+            "rating": "TBC",
+            "duration": "",
+            "description": "It follows Muad'dib, heir to unimaginable power, as he brings to fruition the ancient scheme to create a superbeing ruler among men, not in the heavens",
+            "releaseDate": "2026-12-17",
+            "link": "https://www.eaglewingscinematics.com.sg/movie/dune-part-three/A000000699"
         }
     ]
 }
