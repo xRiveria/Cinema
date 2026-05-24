@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-24T18:09:00.543017",
+    "last_updated": "2026-05-24T22:58:36.427058",
     "golden_village": [
         {
             "filmCd": "1378",
@@ -65850,7 +65850,7 @@
                                 },
                                 {
                                     "link": "https://www.eaglewingscinematics.com.sg/ticket/star-wars-the-mandalorian-and-grogu/film/1000000656/cinema/0000000001/time/107777/gold-hall-1",
-                                    "available": 6,
+                                    "available": 7,
                                     "time": "16:35",
                                     "screen": {
                                         "daynum": "3",
@@ -65864,7 +65864,7 @@
                                 },
                                 {
                                     "link": "https://www.eaglewingscinematics.com.sg/ticket/star-wars-the-mandalorian-and-grogu/film/1000000656/cinema/0000000001/time/107778/gold-hall-1",
-                                    "available": 12,
+                                    "available": 10,
                                     "time": "19:30",
                                     "screen": {
                                         "daynum": "3",
